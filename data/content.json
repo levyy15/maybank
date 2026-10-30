@@ -1,0 +1,172 @@
+{
+  "CentreYellowBox-title": "Achieve Your Financial Goals, Guided by Islamic Principles",
+  "CentreYellowBox-text": "Explore a diverse range of Shariah-compliant accounts, cards, financing options, and investment solutions to manage your finances and pursue your personal financial goals.",
+  "homepage-banner-title": "Your Finances, Guided by Islamic Principles",
+  "homepage-banner-text": "At Maybank Islamic, our commitment to Shariah-compliant banking is unwavering. Discover a partnership where financial growth aligns with ethical standards, ensuring that your investments and daily transactions contribute to a just and equitable economy.",
+  "ImageRow-title": "Center of Excellence",
+
+  "Image1-title": "Halal2u",
+  "Image1-text": "Nurturing trust with every halal-certified product we offer.",
+  "Image2-title": "Daily Financial Insights",
+  "Image2-text": "Empowering your decisions with expert financial analysis and trusted advice.",
+  "Image3-title": "Learning Centre",
+  "Image3-text": "Unlocking the basics of Islamic finance.",
+  "Image4-title": "Media",
+  "Image4-text": "Stay informed with our easy-to-follow updates and reports on the financial world around you.",
+
+  "News-title": "Latest News and Press Release",
+
+  "News1-text": "Maybank Islamic funds urban farming initiative to help reduce income inequality and poverty.",
+  "News1-date": "February 16, 2023",
+  "News1-category": "Investment",
+  "News2-text": "Maybank Islamic Launches EzyWasiat - A Comprehensive Digitised Wasiat for Islamic Estate Planning.",
+  "News2-date": "June 14, 2023",
+  "News2-category": "Investment",
+  "News3-text": "Maybank Islamic Named Best Islamic Bank in Asia by Euromoney.",
+  "News3-date": "August 16, 2023",
+  "News3-category": "Investment",
+  "News4-text": "Maybank Islamic funds urban farming initiative to help reduce income inequality and poverty.",
+  "News4-date": "February 16, 2023",
+  "News4-category": "Investment",
+
+  "Link-title": "Quick Link",
+  "link-box1-title": "Maybank EzyQ",
+  "link-box1-text": "Skip the queue and make your branch appointment online.",
+  "link-box2-title": "Rate Calculator",
+  "link-box2-text": "Calculate your loan or savings interest rates instantly with our user-friendly Rates Calculator.",
+  "link-box3-title": "FAQ",
+  "link-box3-text": "Find quick answers in our comprehensive FAQ section.",
+
+  "footer-column1-title": "ABOUT US",
+  "footer-column1-links": ["About Maybank Islamic", "Corporate & Corporate Governance", "News & Highlights"],
+  "footer-column2-title": "PERSONAL BANKING",
+  "footer-column2-links": ["Banking", "Deposits/AI", "Terms", "Foreignn", "Mudarabah", "Cards", "Financing", "Investment", "Islamic Wealth Management"],
+  "footer-column3-title": "BUSINESS BANKING",
+  "footer-column3-links": ["Financing", "Deposits/AI", "Trade", "Islamic Social Finance", "ITEKAD"],
+  "footer-column4-title": "GLOBAL BANKING",
+  "footer-column4-links": ["Global Markets", "Corporate Banking", "Regional Pressence", "Premeier Mudarabah Account-i (GB)"],
+  "footer-column5-title": "COE",
+  "footer-column5-links": ["Halal2u", "Resolution", "Media", "Learning Centre", "Finance Of The Day"],
+
+  "footer-legal": [
+    "Contact Us",
+    "Rates",
+    "Corporate Governance",
+    "PIDM Brochure",
+    "Security & Privacy",
+    "Terms & Condition"
+  ],
+  "footer-address-line1": "© 2022 Malayan Banking bERHAD (Co. Reg. No. : 196001000142)",
+  "footer-address-line2": "maybank Islamic Berhad (Co. Reg. No. : 200701029411)",
+  "footer-address-line3": "Best viewed on the latest versions of Chrome, Firefox, Edge, Safari.",
+  "footer-contact-title": "CONTACT WITH US",
+  "footer-ethics": ["Business Ethics Charter", "Business Ethics Charter"],
+
+  "reviews": [
+    {
+      "id": 1,
+      "text": "Islamic banking has truly changed my financial life. Their ethical practices and commitment to providing financial benefits have made a significant impact on my financial well-being.",
+      "name": "John Doe",
+      "role": "CEO, XYZ Company",
+      "avatar": ""
+    },
+    {
+      "id": 2,
+      "text": "Islamic banking has truly changed my financial life. Their ethical practices and commitment to providing financial benefits have made a significant impact on my financial well-being.",
+      "name": "John Doe",
+      "role": "CEO, XYZ Company",
+      "avatar": ""
+    },
+    {
+      "id": 3,
+      "text": "Islamic banking has truly changed my financial life. Their ethical practices and commitment to providing financial benefits have made a significant impact on my financial well-being.",
+      "name": "John Doe",
+      "role": "CEO, XYZ Company",
+      "avatar": ""
+    },
+    {
+      "id": 4,
+      "text": "Islamic banking has truly changed my financial life. Their ethical practices and commitment to providing financial benefits have made a significant impact on my financial well-being.",
+      "name": "John Doe",
+      "role": "CEO, XYZ Company",
+      "avatar": ""
+    },
+    {
+      "id": 5,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "name": "John Doe",
+      "role": "CEO, XYZ Company",
+      "avatar": ""
+    },
+    {
+      "id": 6,
+      "text": "Islamic banking has truly changed my financial life. Their ethical practices and commitment to providing financial benefits have made a significant impact on my financial well-being.",
+      "name": "John Doe",
+      "role": "CEO, XYZ Company",
+      "avatar": ""
+    }
+  ],
+
+  "homepage-banner-slides": [
+    {
+      "id": 1,
+      "category": "Centre of Excellence",
+      "title": "Islamic Banking Imitates Conventional: Is It True?",
+      "href": "/coe"
+    },
+    {
+      "id": 2,
+      "category": "Centre of Excellence",
+      "title": "Tackle Misconceptions on Ethical Investments",
+      "href": "/coe"
+    },
+    {
+      "id": 3,
+      "category": "Centre of Excellence",
+      "title": "Where is your money going? Transparency explained",
+      "href": "/coe"
+    }
+  ],
+
+"coe-banner-title": "Centre of Excellence",
+"coe-banner-text": "One-stop learning hub for Islamic financial solutions.",
+
+"coe-icon1-text": "Learning Centre",
+"coe-icon2-text": "Daily Financial Insights",
+"coe-icon3-text": "Resolution",
+"coe-icon4-text": "Halal2u",
+"coe-icon5-text": "Media",
+
+"coe-title1": "Research Paper",
+"coe-text1": " A repository of academic and practical writings applicable to Islamic Banking and Finance industry.",
+"coe-box1-title": "Box 1 title", "coe-box1-text": "Box 1 text goes here.",
+"coe-box2-title": "Box 2 title", "coe-box2-text": "Box 2 text goes here.",
+"coe-box3-title": "Box 3 title", "coe-box3-text": "Box 3 text goes here.",
+"coe-box4-title": "Box 4 title", "coe-box4-text": "Box 4 text goes here.",
+"coe-box5-title": "Box 5 title", "coe-box5-text": "Box 5 text goes here.",
+"coe-box6-title": "Box 6 title", "coe-box6-text": "Box 6 text goes here.",
+
+"coe-title2": "Articles",
+"coe-text2": "Related articles on matters regarding Islamic Banking and Finance.",
+"coe-box7-title": "Box 7 title", "coe-box7-text": "Box 7 text goes here.",
+"coe-box8-title": "Box 8 title", "coe-box8-text": "Box 8 text goes here.",
+"coe-box9-title": "Box 9 title", "coe-box9-text": "Box 9 text goes here.",
+"coe-box10-title": "Box 10 title", "coe-box10-text": "Box 10 text goes here.",
+"coe-box11-title": "Box 11 title", "coe-box11-text": "Box 11 text goes here.",
+"coe-box12-title": "Box 12 title", "coe-box12-text": "Box 12 text goes here.",
+"coe-box13-title": "Box 13 title", "coe-box13-text": "Box 13 text goes here.",
+"coe-box14-title": "Box 14 title", "coe-box14-text": "Box 14 text goes here.",
+
+"coe-title3": "Title three",
+"coe-text3": "Text three goes here.",
+"coe-glossary-tabs": [
+  "Islamic Finance Glossary A-F",
+  "Islamic Finance Glossary G-L",
+  "Islamic Finance Glossary M-R",
+  "Islamic Finance Glossary S-Z"
+],
+"coe-table-title": "Meaning",
+"coe-table-c1": "Term one", "coe-table-r1": "Meaning of term one.",
+"coe-table-c2": "Term two", "coe-table-r2": "Meaning of term two.",
+"coe-table-c3": "Term three", "coe-table-r3": "Meaning of term three."
+}
