@@ -4,6 +4,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Always light: the site keeps its own colours even when the computer or
+     browser is in dark mode (form controls and scrollbars stay light too) */
+  color-scheme: light;
 }
 
 @theme inline {
@@ -13,26 +16,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Scale the whole site up on big monitors.
-   1440px is the reference design. Above it, 1rem grows with the screen width,
-   so every size written in rem (text, padding, max-width, logo...) scales together
-   and a wider screen looks exactly like the 1440 layout, only bigger.
-     1440px -> 16px (100%)    1920px -> 21.3px (133%)
-     2560px -> 28.4px (178%)  3840px -> 42.7px (267%)
-   100vw / 90 = 16px at 1440px (1440 / 16 = 90). */
 @media (min-width: 1440px) {
   html { font-size: calc(100vw / 90); }
 }
