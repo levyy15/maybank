@@ -26,11 +26,12 @@ export default function HomeBanner() {
           sizes="100vw"
           className="hidden object-cover object-center md:block"
         />
-        
+
         <div className="absolute inset-0 bg-black/20" />
       </div>
 
-<div className="mx-auto flex w-full max-w-7xl flex-col justify-between gap-10 pl-4 md:pr-0 pb-26 pt-18 md:justify-center md:gap-20 md:px-10 lg:flex-row lg:justify-between lg:gap-10 lg:px-14 lg:pb-20 lg:pt-25 xl:px-20">        {/* Text: tablet leans slightly left; desktop sits a bit lower and further from the edge */}
+      <div className="mx-auto flex w-full max-w-7xl flex-col justify-between gap-10 pl-4 pr-0 pb-26 pt-18 md:justify-center md:gap-20 md:px-10 lg:flex-row lg:justify-between lg:gap-10 lg:px-14 lg:pb-20 lg:pt-25 xl:px-20">
+        {" "}
         <div className="md:max-w-[60%] lg:max-w-[48%] lg:self-start">
           <h1 className="text-3xl font-medium leading-tight sm:text-4xl lg:text-5xl">
             {" "}
@@ -41,7 +42,6 @@ export default function HomeBanner() {
             {content["homepage-banner-text"]}
           </p>
         </div>
-
         {/* Slider box: tablet sits slightly right; desktop is a bit higher and further left */}
         <div className="overflow-hidden md:ml-auto md:w-[68%] lg:absolute lg:bottom-28 lg:right-0 lg:ml-0 lg:w-1/2 lg:pl-[0%]">
           <BannerSlider />

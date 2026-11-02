@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import "swiper/css";
 import content from "@/data/content.json";
+import HoverNotch from "./shared/HoverNotch";
 
 const images = [
   {
@@ -41,7 +42,7 @@ const images = [
 
 // Rounds the image's corners on either side of the notch (white = page background)
 const cornerFill = {
-  background: "radial-gradient(circle at 0 0, transparent 24px, #fff 24px)",
+  background: "radial-gradient(circle at 0 0, transparent 1.5rem, #fff 1.5rem)",
 };
 
 type CardData = (typeof images)[number];
@@ -61,28 +62,8 @@ function Card({ src, alt, title, text }: CardData) {
           />
         </div>
 
-        {/* Notch: appears bottom-right on hover */}
-        <div className="pointer-events-none absolute bottom-0 right-0 h-[76px] w-[76px] origin-bottom-right scale-90 opacity-0 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100">
-          {/* White block cut into the image */}
-          <div className="absolute inset-0 rounded-tl-[24px] bg-white" />
-
-          {/* Corner patches: round the image's corners where it meets the notch */}
-          <div
-            aria-hidden
-            className="absolute bottom-full right-0 h-6 w-6"
-            style={cornerFill}
-          />
-          <div
-            aria-hidden
-            className="absolute bottom-0 right-full h-6 w-6"
-            style={cornerFill}
-          />
-
-          {/* Black circle with yellow arrow */}
-          <span className="absolute bottom-0 right-0 flex h-[60px] w-[60px] items-center justify-center rounded-full bg-black text-[#ffc83d]">
-            <ArrowUpRightIcon className="h-5 w-5" />
-          </span>
-        </div>
+        {/* Notch: appears bottom-right on hover (shared component) */}
+        <HoverNotch />
       </div>
 
       {/* Title + text */}

@@ -9,12 +9,14 @@ import "swiper/css/scrollbar";
 import content from "@/data/content.json";
 import useMounted from "./shared/useMounted";
 import SwiperScrollbar from "./shared/SwipperScrollbar";
+import useRem from "./shared/useRem";
 
 const reviews = content.reviews;
 const pad = (n: number) => String(n).padStart(2, "0");
 
 export default function Reviews() {
   const mounted = useMounted();
+  const rem = useRem();
 
   return (
     <section className="mt-8 overflow-hidden pb-16 lg:mt-12 lg:pb-24">
@@ -26,25 +28,23 @@ export default function Reviews() {
             rewind
             grabCursor
             speed={1200}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             scrollbar={{ el: ".reviews-scrollbar", draggable: true }}
             slidesPerView={1.15}
-            spaceBetween={16}
+            spaceBetween={rem}
             breakpoints={{
-              640: { slidesPerView: 1.4, spaceBetween: 24 },
-              1024: { slidesPerView: 1.8, spaceBetween: 40 },
+              640: { slidesPerView: 1.4, spaceBetween: 1.5 * rem },
+              1024: { slidesPerView: 1.8, spaceBetween: 2.5 * rem },
             }}
             className="[--swiper-wrapper-transition-timing-function:cubic-bezier(0.4,0,0.2,1)]"
           >
             {reviews.map((r) => (
-              <SwiperSlide key={r.id} className="!h-auto">
+              <SwiperSlide key={r.id} className="!flex !h-auto">
                 {({ isActive }) => (
-                  // pb-10 leaves room for the half of the profile box that hangs out
-                  <div className="pb-10">
-                    <div className="relative">
-                      {/* Review card (shorter) */}
+                  <div className="flex w-full flex-col pb-10">
+                    <div className="relative flex-1">
                       <div
-                        className={`min-h-[180px] rounded-[32px] border border-[#ffc83d] p-6 pb-12 transition-colors duration-1000 ease-in-out lg:p-10 lg:pb-14 ${
+                        className={`h-full rounded-[2rem] border border-[#ffc83d] p-6 pb-12 transition-colors duration-1000 ease-in-out lg:p-10 lg:pb-14 ${
                           isActive
                             ? "bg-[#ffc83d] text-gray-900"
                             : "bg-white text-[#ffc83d]"
@@ -88,7 +88,7 @@ export default function Reviews() {
             ))}
           </Swiper>
 
-          <div className="mx-auto mt-2 max-w-[1100px] px-4">
+          <div className="mx-auto mt-2 max-w-[68.75rem] px-4">
             <SwiperScrollbar
               selector="reviews-scrollbar"
               start={pad(1)}
@@ -97,7 +97,7 @@ export default function Reviews() {
           </div>
         </>
       ) : (
-        <div className="h-[300px]" />
+        <div className="h-[18.75rem]" />
       )}
     </section>
   );

@@ -128,7 +128,7 @@ export default function Navbar() {
       onMouseLeave={handleHeaderLeave}
       className="sticky top-0 z-50 w-full bg-[#ffc83d] shadow"
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 lg:h-20 lg:px-8">
+      <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 md:px-10 lg:h-20 lg:px-14 xl:px-20">
         {/* Logo: always goes back to the homepage (app/page.tsx) */}
         <Link
           href="/"
@@ -142,7 +142,7 @@ export default function Navbar() {
             width={140}
             height={40}
             priority
-            className="h-10 w-auto lg:h-full"
+            className="h-8 w-auto lg:h-10"
           />
         </Link>
 

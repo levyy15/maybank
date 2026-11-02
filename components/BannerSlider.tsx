@@ -10,6 +10,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import "swiper/css";
 
 import content from "@/data/content.json";
+import useRem from "./shared/useRem";
 
 const slides = content["homepage-banner-slides"];
 const pad = (n: number) => String(n).padStart(2, "0");
@@ -22,6 +23,7 @@ export default function BannerSlider() {
   //   const [opacity, setOpacity] = useState(1);
   //   const wrapRef = useRef<HTMLDivElement>(null);
   const total = slides.length;
+  const rem = useRem();
 
   // Only render Swiper in the browser (it uses Date.now() internally)
   useEffect(() => {
@@ -48,18 +50,20 @@ export default function BannerSlider() {
           mousewheel={{ forceToAxis: true }}
           grabCursor
           slidesPerView={"auto"}
-          spaceBetween={16}
-          onSlideChange={(s) => setActive(s.isEnd ? total - 1 : s.activeIndex)}
+          spaceBetween={rem}
+          onSlideChange={(s) =>
+            setActive(s.isEnd ? total - 1 : Math.min(s.activeIndex, total - 1))
+          }
         >
           {slides.map((slide) => (
             <SwiperSlide
               key={slide.id}
-              className="!h-auto !w-[min(320px,82vw)] sm:!w-[400px]"
+              className="!h-auto !w-[min(20rem,82vw)] sm:!w-[25rem]"
             >
               <Link
                 href={slide.href}
                 draggable={false}
-                className="flex h-[130px] flex-col justify-between rounded-[28px] border border-white/60 bg-white/10 p-4 backdrop-blur-[4px] sm:aspect-[7/3] sm:h-auto sm:p-5"
+                className="flex h-[8.125rem] flex-col justify-between rounded-[1.75rem] border border-white/60 bg-white/10 p-4 backdrop-blur-[4px] sm:aspect-[7/3] sm:h-auto sm:p-5"
               >
                 <div className="flex items-start justify-between">
                   <span className="text-xs">{slide.category}</span>
@@ -73,9 +77,14 @@ export default function BannerSlider() {
               </Link>
             </SwiperSlide>
           ))}
+          {/* Spacer: empty room after the last card so it can be swiped further across */}
+          <SwiperSlide
+            aria-hidden
+            className="pointer-events-none !h-auto !w-[20vw] lg:!w-[15vw]"
+          />
         </Swiper>
       ) : (
-        <div className="h-[130px] w-[min(320px,82vw)] sm:aspect-[7/3] sm:h-auto sm:w-[400px]" />
+        <div className="h-[8.125rem] w-[min(20rem,82vw)] sm:aspect-[7/3] sm:h-auto sm:w-[25rem]" />
       )}
     </div>
   );

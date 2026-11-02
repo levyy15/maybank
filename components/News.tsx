@@ -11,6 +11,7 @@ import content from "@/data/content.json";
 import useMounted from "./shared/useMounted";
 import SwiperScrollbar from "./shared/SwipperScrollbar";
 import HoverNotch from "./shared/HoverNotch";
+import useRem from "./shared/useRem";
 
 const c = content as unknown as Record<string, string>;
 const pad = (n: number) => String(n).padStart(2, "0");
@@ -54,6 +55,7 @@ const TOTAL = news.length;
 
 export default function News() {
   const mounted = useMounted();
+  const rem = useRem();
 
   return (
     <section className="mx-auto max-w-7xl px-4 pb-16 pt-6 lg:px-8 lg:pb-24 lg:pt-10">
@@ -85,10 +87,10 @@ export default function News() {
             scrollbar={{ el: ".news-scrollbar", draggable: true }}
             grabCursor
             slidesPerView={1.2}
-            spaceBetween={16}
+            spaceBetween={rem}
             breakpoints={{
               640: { slidesPerView: 2.2 },
-              1024: { slidesPerView: 3.2, spaceBetween: 24 },
+              1024: { slidesPerView: 3.2, spaceBetween: 1.5 * rem },
             }}
           >
             {news.map((item) => (
@@ -97,7 +99,7 @@ export default function News() {
                 <Link
                   href="/news"
                   draggable={false}
-                  className="group relative flex h-full flex-col overflow-hidden rounded-3xl bg-white p-4 transition-colors duration-300 hover:bg-[#ffc83d]"
+                  className="group relative flex h-full flex-col rounded-3xl bg-white p-2 transition-colors duration-300 hover:bg-[#ffc83d]"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
                     <Image
@@ -109,12 +111,12 @@ export default function News() {
                     />
                   </div>
 
-                  <p className="mt-4 text-lg leading-snug text-gray-800">
+                  <p className="mt-4 px-2 text-lg leading-snug text-gray-800">
                     {item.text}
                   </p>
 
                   {/* Date and category, bottom left */}
-                  <p className="mt-auto pt-6 text-sm text-gray-700">
+                  <p className="mt-auto px-2 pb-1 pt-6 text-sm text-gray-700">
                     {item.date}
                     <span className="mx-3">•</span>
                     {item.category}
@@ -134,7 +136,7 @@ export default function News() {
           />
         </>
       ) : (
-        <div className="h-[420px]" />
+        <div className="h-[26.25rem]" />
       )}
     </section>
   );

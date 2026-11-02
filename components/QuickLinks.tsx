@@ -25,7 +25,7 @@ export default function QuickLinks() {
             <Link
               key={box.id}
               href={box.href}
-              className="group relative flex min-h-[220px] flex-col overflow-hidden rounded-4xl bg-[#fff6dd] p-6 text-black transition-transform duration-300 hover:-translate-y-px lg:min-h-[260px] lg:p-8"
+              className="group relative flex min-h-[13.75rem] flex-col rounded-4xl bg-[#fff6dd] p-6 text-black transition-transform duration-300 hover:-translate-y-px lg:min-h-[16.25rem] lg:p-8"
             >
               {/* Icon: top left */}
               <CreditCardIcon className="h-8 w-8" />

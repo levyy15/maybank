@@ -118,7 +118,7 @@ export default function Footer() {
         {/* Bottom: logo + address (left), contact (right side of the page, left-aligned text) */}
         <div className="mt-10 grid gap-10 lg:grid-cols-5">
           <div className="lg:col-span-3">
-            <Image src="/images/logo.png" alt="Company logo" width={140} height={40} />
+            <Image src="/images/logo.png" alt="Company logo" width={140} height={40} className="h-10 w-auto" />
             <p className="mt-6 text-sm text-gray-400">{c['footer-address-line1']}</p>
             <p className="mt-1 text-sm text-gray-400">{c['footer-address-line2']}</p>
             <br />
